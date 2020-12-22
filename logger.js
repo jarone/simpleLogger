@@ -15,7 +15,6 @@ const compact = arr => arr.filter(i => i)
 const pipe = fns => args => fns.reduce((arg, fn) => fn(arg), args)
 const JSONStringifyMiddleware = arg => JSON.stringify(arg)
 const startRotator = (paths, { interval, size, unit }) => {
-  console.log('enter startRotator')
   const rotator = fork('./rotatorLauncher.js')
 
   rotator.on('exit', (code) => {
