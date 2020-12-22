@@ -36,8 +36,10 @@ const JSONStringifyMiddleware = arg => JSON.stringify(arg)
 ### Specification of rotation
 
 `interval`: specify the interval to rotate. eg: '10s', default is 10 seconds.
-`size`: specify the size limit to rotate. eg: '10m', default is 10MB
-`unit`: specify the cycle time unit. eg: 'hour', 'day', 'month'. default is 'minute'
+
+`size`: specify the size limit to rotate. eg: '10m', default is 10MB.
+
+`unit`: specify the cycle time unit. eg: 'hour', 'day', 'month'. default is 'minute'.
 
 If you do not specify rotation field, the rotator will not launcher.
 
