@@ -15,7 +15,7 @@
 
 all options is optional.
 
-All support colours:
+### All support colours:
 
 ![](https://via.placeholder.com/15/ff0000?text=+) `Red`
 
@@ -27,13 +27,13 @@ All support colours:
 
 ![](https://via.placeholder.com/15/ffffff?text=+) `White`
 
-Default Middleware:
+### Default Middleware:
 
 ```javascript
 const JSONStringifyMiddleware = arg => JSON.stringify(arg)
 ```
 
-Specification of rotation
+### Specification of rotation
 
 `interval`: specify the interval to rotate. eg: '10s', default is 10 seconds.
 `size`: specify the size limit to rotate. eg: '10m', default is 10MB
